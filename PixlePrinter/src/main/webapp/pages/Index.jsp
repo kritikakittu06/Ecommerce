@@ -39,7 +39,7 @@
         <div class="icons">
             <div id="menu-btn" class="fas fa-bars"></div>
             <a href="#" class="fas fa-user-circle"></a> <a href="#"
-                class="fas fa-search"></a> <a href="#" class="fas fa-heart"></a>
+                class="fas fa-search"></a> <a href="#" class="fas fa-shopping-cart"></a>
         </div>
     </section>
 	<!-- Main Content -->

@@ -1,0 +1,43 @@
+package controller.servlets;
+
+import java.io.IOException;
+import java.util.List;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import models.BrandModel;
+import utilities.Utilities;
+
+/**
+ * Servlet implementation class AddBrand
+ */
+@WebServlet("/AddBrand")
+public class AddBrandServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	controller.DatabaseController dbController = new controller.DatabaseController();
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public AddBrandServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String companyName = request.getParameter(Utilities.company_name);
+		BrandModel brandModel = new BrandModel(companyName);
+		int result = dbController.addNewBrands(brandModel);
+		System.out.println("Add brand result is : "+result);
+		
+	}
+
+}

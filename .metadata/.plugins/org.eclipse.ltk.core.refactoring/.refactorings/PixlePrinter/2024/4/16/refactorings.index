@@ -1,2 +1,27 @@
 1713088024955	Delete element
 1713110847082	Delete element
+1713322104555	Rename package 'databaseConnector'
+1713322419631	Copy package
+1713322460778	Copy package
+1713322467971	Delete element
+1713322474466	Rename package 'loginLogout.servlets'
+1713323350852	Copy package
+1713323378912	Move compilation unit
+1713323406121	Rename type 'UserLogin'
+1713323419466	Move compilation unit
+1713323428538	Delete element
+1713323492413	Rename type 'StoreContactUsMessage'
+1713323512628	Delete element
+1713323520934	Delete element
+1713323536228	Move compilation unit
+1713323547038	Delete element
+1713323623303	Delete element
+1713323657855	Move compilation unit
+1713323669936	Rename type 'AdminRegister'
+1713323706672	Move compilation unit
+1713323721072	Rename type 'UserRegister'
+1713323751782	Delete element
+1713323784494	Delete element
+1713325004635	Delete element
+1713493782620	Move 'Girl.jpg' to 'Images'
+1713498310294	Rename type 'AddBrand'

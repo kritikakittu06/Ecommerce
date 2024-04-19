@@ -77,7 +77,7 @@
 			<!-- Contact Form -->
 			<div class="right">
 				<div class="topic-text">Send us a message</div>
-				<p>If you have any queries regarding our products or overall
+				<p >If you have any queries regarding our products or overall
 					system, you can contact us here.</p>
 				<form action="${pageContext.request.contextPath}/StoreContactUsMessage" method="post">
 					<div class="input-box">

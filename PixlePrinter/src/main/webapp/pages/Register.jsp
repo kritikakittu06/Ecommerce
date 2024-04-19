@@ -18,7 +18,6 @@
                 <input type="password" minlength="8" id="confirmPassword" placeholder="Confirm Password" oninput="checkPasswords()"> 
                 <input type="text" id="fullName" placeholder="Full Name" name="full_name">
                 <input type="email" id="email" placeholder="Email Account" name="email">
-
                 <input type="tel" id="phoneNumber" placeholder="Phone Number" name="phone_Num">
                 <button class="tombol-register" type="submit" id="registerButton" disabled>Register</button>
             </form>

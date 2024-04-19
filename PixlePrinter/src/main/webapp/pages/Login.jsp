@@ -10,7 +10,7 @@
   <title>Login</title>
 </head>
 
-<body>
+<body style="background-image: url('${pageContext.request.contextPath}/Images/LoginImage.png');">
   <header class="showcase">
     <div class="showcase-content">
       <div class="showcase-top">
@@ -43,6 +43,6 @@
       </div>
     </div>
   </header>
-  <script src="../js/Login.js"></script>
+  <script src="${pageContext.request.contextPath}/js/Login.js"></script>
 </body>
 </html>

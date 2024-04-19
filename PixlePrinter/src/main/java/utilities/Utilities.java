@@ -9,7 +9,7 @@ package utilities;
 		public static final String Get_Login_User_Information = "SELECT * FROM User WHERE USERNAME = ?;";
 		
 		//query for user registration
-		public static final String Customer_Registration = "INSERT INTO User ( fullName, email, userName, phoneNumber, password) "
+		public static final String Customer_Registration = "INSERT INTO User (fullName, email, userName, phoneNumber, password) "
 		        + "VALUES (?,?,?,?,?)";
 		//query for admin registration 
 		public static final String Add_Admin = "INSERT INTO User (fullName, email, userName, accountType, phoneNumber, password)"
@@ -21,7 +21,14 @@ package utilities;
 		public static final String Read_Contact_Us_Message = "SELECT * FROM ContactUsFormMessage";
 		//query to count the messages in the database
 		public static final String Count_Total_Contact_Us_Messages = "SELECT COUNT(*) FROM ContactUsFormMessage;";
-		
+		//query to add brand to the database
+		public static final String Add_Brands = "INSERT INTO Brand (CompanyName) VALUES(?) ";
+		//query to get all the brands from the database;
+		public static final String Show_Brands = "select * from Brand";
+		//query to insert products into the product table
+		public static final String Add_Products = "INSERT INTO Product(productName, productDesc, price, quantity, brandId)";
+		//quert to see all of the products
+		public static final String  See_All_Products = "SELECT * FROM Product";
 		
 		//defining a set of constant values
 		public static final String name = "name";
@@ -32,6 +39,7 @@ package utilities;
 		public static final String phone_number = "phone_Num";
 		public static final String message = "message";
 		public static final String account_type = "account_type";
+		public static final String company_name = "company_name";
 		//end constants
 		
 		//start of the page names
@@ -48,6 +56,7 @@ package utilities;
 		public static final String ERROR_MESSAGE = "errorMessage";
 		public static final String INCORRECT_LOGIN_CREDENTIAL_ERROR = "Username or Password Incorrect";
 		public static final String Successfully_Stored_Message = "Dear user your message has been successfully stored, please wait for an response";
+		public static final String SUCCESSFULLY_ADD_BRAND_MESSAGE = "Brand Added Successfully";
 		// End string messages 
 		
 		// Start JSP Route
@@ -56,6 +65,7 @@ package utilities;
 		public static final String HOME_PAGE = "/pages/Index.jsp";
 		public static final String ADMIN_HOME_PAGE = "/pages/Admin.jsp";
 		public static final String CONTACT_US_PAGE = "/pages/Contact.jsp";
+		public static final String ADD_BRAND = "/pages/AddBrand.jsp";
 		// End JSP Route
 		
 		// Start Servlet Route

@@ -207,6 +207,7 @@
 
 .footer{
     background:#b9b6ca;
+    margin-top: 60px;
 }
 
 .footer .box-container{
@@ -283,6 +284,7 @@
 
 .message-from-backend {
   margin-top: 20px;
+  margin-left: 400px;
 }
 
 .message-from-backend .alert {
