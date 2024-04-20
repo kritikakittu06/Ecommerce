@@ -7,14 +7,13 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import controller.DatabaseController;
 import models.ContactUsMessageModel;
 import utilities.Utilities;
 
 @WebServlet("/StoreContactUsMessage")
 public class StoreContactUsMessageServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	DatabaseController dbController = new controller.DatabaseController();//creating a new object of the dbController class (servlet file)
+	DatabaseController dbController = new controller.servlets.DatabaseController();//creating a new object of the dbController class (servlet file)
     /**
      * @see HttpServlet#HttpServlet()
      */

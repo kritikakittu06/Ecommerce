@@ -19,7 +19,7 @@ import utilities.Utilities;
 @WebServlet("/AddBrand")
 public class AddBrandServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	controller.DatabaseController dbController = new controller.DatabaseController();
+	controller.servlets.DatabaseController dbController = new controller.servlets.DatabaseController();
     /**
      * @see HttpServlet#HttpServlet()
      */

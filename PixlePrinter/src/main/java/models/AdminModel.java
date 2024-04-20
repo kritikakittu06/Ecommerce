@@ -1,6 +1,11 @@
 package models;
 
+import java.io.File;
 import java.io.Serializable;
+
+import javax.servlet.http.Part;
+
+import utilities.Utilities;
 
 public class AdminModel implements Serializable{
 	private String fullName;
@@ -9,9 +14,30 @@ public class AdminModel implements Serializable{
 	private String accountType;
 	private String password;
 	private String phoneNumber;
+	private String profilePicture;
+	
+	private String getProfilePicUrl(Part part) {//part is an imterface not a class
+		String imageSavePath = Utilities.Profile_Picture_Store_Dir;
+		File imageSaveDir = new File(imageSavePath);
+		String profilePicUrlFromPath = null;
+		if(!imageSaveDir.exists()) {
+			imageSaveDir.mkdir();
+		}
+		String contentDisp = part.getHeader("content-disposition");
+		String []items = contentDisp.split(";");
+		for(String s : items) {
+			if(s.trim().startsWith("filename")) {
+				profilePicUrlFromPath = s.substring(s.indexOf("=") + 2, s.length() -1);
+			}
+		}
+		if(profilePicUrlFromPath == null || profilePicUrlFromPath.isEmpty()) {
+			profilePicUrlFromPath = "default.png";
+		}
+		return profilePicUrlFromPath;
+	}
 	
 	public AdminModel(String fullName, String email, String userName, String accountType, String password,
-			String phoneNumber) {
+			String phoneNumber, Part imagePart) {
 		super();
 		this.fullName = fullName;
 		this.email = email;
@@ -19,6 +45,7 @@ public class AdminModel implements Serializable{
 		this.accountType = accountType;
 		this.password = password;
 		this.phoneNumber = phoneNumber;
+		this.profilePicture = getProfilePicUrl(imagePart);
 	}
 
 	public String getFullName() {
@@ -69,5 +96,11 @@ public class AdminModel implements Serializable{
 		this.phoneNumber = phoneNumber;
 	}
 	
+	public String getProfilePicture() {
+		return profilePicture;
+	}
 	
+	public void setProfilePicture(Part part) {
+		this.profilePicture = getProfilePicUrl(part);
+	}
 }

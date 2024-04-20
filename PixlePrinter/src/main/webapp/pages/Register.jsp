@@ -10,7 +10,7 @@
 <body background="${pageContext.request.contextPath}/https://w.wallhaven.cc/full/47/wallhaven-47585y.jpg">
     <div class="container">
         <div class="card">
-            <form method="post" action="${pageContext.request.contextPath}/UserRegister">
+            <form method="post" action="${pageContext.request.contextPath}/UserRegister" enctype="multipart/form-data">
                 <h2 class="register">Register</h2>
                 <p id="passwordError"></p>
                 <input type="text" placeholder="Username" autocomplete="username" name="user_name">
@@ -19,6 +19,7 @@
                 <input type="text" id="fullName" placeholder="Full Name" name="full_name">
                 <input type="email" id="email" placeholder="Email Account" name="email">
                 <input type="tel" id="phoneNumber" placeholder="Phone Number" name="phone_Num">
+                <input type="file" id="profilePicture" placeholder="Profile Picture" name="image">
                 <button class="tombol-register" type="submit" id="registerButton" disabled>Register</button>
             </form>
             <div class="switch">

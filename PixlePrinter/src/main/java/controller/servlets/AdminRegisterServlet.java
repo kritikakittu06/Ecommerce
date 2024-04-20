@@ -2,10 +2,12 @@ package controller.servlets;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.Part;
 
 import models.AdminModel;
 import utilities.Utilities;
@@ -14,9 +16,13 @@ import utilities.Utilities;
  * Servlet implementation class AdminRegister
  */
 @WebServlet("/AdminRegister")
+@MultipartConfig(fileSizeThreshold=1024 * 1024 * 5,//upto 5mb file size will be saved in the database and system
+maxFileSize = 1024*1024*10,//10mb 
+maxRequestSize = 1024*1024*50 //incoming request size containing all information  must be equals to or less than 50
+		)
 public class AdminRegisterServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	 controller.DatabaseController dbController = new controller.DatabaseController();//creating a new object of the dbController class (servlet file)
+	 controller.servlets.DatabaseController dbController = new controller.servlets.DatabaseController();//creating a new object of the dbController class (servlet file)
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -34,8 +40,9 @@ public class AdminRegisterServlet extends HttpServlet {
 		String password = request.getParameter(Utilities.password);
 		String phoneNumber = request.getParameter(Utilities.phone_number);
 		String accountType = request.getParameter(Utilities.account_type);
+		Part imagePart = request.getPart("image");
 		
-		AdminModel adminModel =  new AdminModel(fullName, email, userName, accountType, password, phoneNumber);
+		AdminModel adminModel =  new AdminModel(fullName, email, userName, accountType, password, phoneNumber, imagePart);
 		
 		int result = dbController.registerNewAdmin(adminModel);
 		System.out.println("Admin register result is : "+ result);

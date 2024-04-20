@@ -62,9 +62,8 @@
 			%>
 			<li>No records found</li>
 			<%
-}
-%>
-
+			}%>
+	
 		</ul>
 	</div>
 </body>

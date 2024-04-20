@@ -12,7 +12,7 @@ import utilities.Utilities;
 @WebServlet("/UserLogin")
 public class LoginServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
-    controller.DatabaseController dbController = new controller.DatabaseController();
+    controller.servlets.DatabaseController dbController = new controller.servlets.DatabaseController();
 
     public LoginServlet() {
         super();

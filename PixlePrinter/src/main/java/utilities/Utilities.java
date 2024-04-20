@@ -9,11 +9,11 @@ package utilities;
 		public static final String Get_Login_User_Information = "SELECT * FROM User WHERE USERNAME = ?;";
 		
 		//query for user registration
-		public static final String Customer_Registration = "INSERT INTO User (fullName, email, userName, phoneNumber, password) "
-		        + "VALUES (?,?,?,?,?)";
+		public static final String Customer_Registration = "INSERT INTO User (fullName, email, userName, phoneNumber, password, profilePicture) "
+		        + "VALUES (?,?,?,?,?,?)";
 		//query for admin registration 
-		public static final String Add_Admin = "INSERT INTO User (fullName, email, userName, accountType, phoneNumber, password)"
-		           + " VALUES (?,?,?,?,?,?)";
+		public static final String Add_Admin = "INSERT INTO User (fullName, email, userName, accountType, phoneNumber, password, profilePicture)"
+		           + " VALUES (?,?,?,?,?,?,?)";
 		//query for storing the contact us message to the database
 		public static final String Store_Contact_Us_Page_Message = "INSERT INTO ContactUsFormMessage (Name, ContactNumber, Email, Message)"
 				+ "VALUES (?, ?, ?, ?)";
@@ -47,6 +47,12 @@ package utilities;
 		public static final String Login_Page_Title = "Login Page";
 		public static final String Registration_Page_Title = "Welcome User";
 		//end of page names
+		
+		//profile picture store path
+		public static final String Profile_Picture_Store_Dir = "/home/happy-kitty/eclipse-workspace/PixlePrinter/src/main/webapp/Uploads/ProfilePicture/";
+		//product image store path
+		public static final String Product_Image_Store_Dir = "/home/happy-kitty/eclipse-workspace/PixlePrinter/src/main/webapp/Uploads/ProductImages/";
+		
 		
 		//Start of constant string messages
 		public static final String SUCCESSFULLY_REGISTERED_MESSAGE = "The User Was Successfully Registered!";

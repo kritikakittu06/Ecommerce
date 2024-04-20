@@ -80,7 +80,7 @@
 <body>
   <div class="container">
     <h2>Add Product</h2>
-    <form action="/add-product" method="POST">
+    <form action="/add-product" method="POST" enctype="multipart/form-data">
       <div class="form-group">
         <label for="productName">Product Name</label>
         <input type="text" id="productName" name="productName" required>
@@ -101,16 +101,6 @@
   <label for="brandId">Brand</label>
   <select id="brandId" name="brandId" required>
     <option value="" selected disabled>Select Brand</option>
-    <% 
-      List<Brand> brands = getBrandsFromDatabase();
-      if (brands.isEmpty()) {
-    %>
-    <option value="" disabled>No brands found</option>
-    <% } else {
-       for (Brand brand : brands) { %>
-         <option value="<%= brand.getCompanyId() %>"><%= brand.getCompanyName() %></option>
-       <% } 
-      } %>
   </select>
 </div>
       <button type="submit">Add Product</button>
