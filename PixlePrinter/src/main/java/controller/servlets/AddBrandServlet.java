@@ -30,7 +30,11 @@ public class AddBrandServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // Call the getBrands method to fetch the brands from the database
-        List<BrandModel> brands = dbController.getBrands();
+    	System.out.println("Add brand servlet");
+        List<BrandModel> brands = dbController.getBrandsFromDatabase();
+        for(BrandModel bs: brands) {
+        	System.out.println(bs.getCompanyName());
+        }
         request.setAttribute("brands", brands);
         request.getRequestDispatcher(Utilities.ADD_BRAND).forward(request, response);
     }

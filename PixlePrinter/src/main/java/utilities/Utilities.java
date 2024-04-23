@@ -26,7 +26,8 @@ package utilities;
 		//query to get all the brands from the database;
 		public static final String Show_Brands = "select * from Brand";
 		//query to insert products into the product table
-		public static final String Add_Products = "INSERT INTO Product(productName, productDesc, price, quantity, brandId)";
+		public static final String Add_Products = "INSERT INTO Product(productName, productDesc, price, quantity, companyName, productImage)"
+				+ "VALUES (?,?,?,?,?,?)";
 		//quert to see all of the products
 		public static final String  See_All_Products = "SELECT * FROM Product";
 		
@@ -40,6 +41,12 @@ package utilities;
 		public static final String message = "message";
 		public static final String account_type = "account_type";
 		public static final String company_name = "company_name";
+		public static final String product_name = "productName";
+		public static final String product_descrption = "productDescription";
+		public static final String product_price = "productPrice";
+		public static final String product_quantity = "productQuantity";
+		public static final String brand_name = "brandName";
+		public static final String product_image = "productImage";
 		//end constants
 		
 		//start of the page names
@@ -51,7 +58,7 @@ package utilities;
 		//profile picture store path
 		public static final String Profile_Picture_Store_Dir = "/home/happy-kitty/eclipse-workspace/PixlePrinter/src/main/webapp/Uploads/ProfilePicture/";
 		//product image store path
-		public static final String Product_Image_Store_Dir = "/home/happy-kitty/eclipse-workspace/PixlePrinter/src/main/webapp/Uploads/ProductImages/";
+		public static final String Product_Picture_Store_Dir = "/home/happy-kitty/eclipse-workspace/PixlePrinter/src/main/webapp/Uploads/ProductImages/";
 		
 		
 		//Start of constant string messages
@@ -63,6 +70,7 @@ package utilities;
 		public static final String INCORRECT_LOGIN_CREDENTIAL_ERROR = "Username or Password Incorrect";
 		public static final String Successfully_Stored_Message = "Dear user your message has been successfully stored, please wait for an response";
 		public static final String SUCCESSFULLY_ADD_BRAND_MESSAGE = "Brand Added Successfully";
+		public static final String PRODUCT_SUCCESSFULLU_ADD_MESSAGE = "The product was added successfully";
 		// End string messages 
 		
 		// Start JSP Route
@@ -72,6 +80,7 @@ package utilities;
 		public static final String ADMIN_HOME_PAGE = "/pages/Admin.jsp";
 		public static final String CONTACT_US_PAGE = "/pages/Contact.jsp";
 		public static final String ADD_BRAND = "/pages/AddBrand.jsp";
+		public static final String ADD_PRODUCT_PAGE = "/pages/AddProducts.jsp";
 		// End JSP Route
 		
 		// Start Servlet Route

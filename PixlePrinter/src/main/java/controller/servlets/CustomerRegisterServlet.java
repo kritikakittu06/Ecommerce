@@ -49,7 +49,7 @@ public class CustomerRegisterServlet extends HttpServlet {
 		}
 		int result = dbController.addNewCustomer(userModel);
 		
-		System.out.println(result);
+		System.out.println("customer registration result is: "+result);
 		
 		if (result == 1) {
 		    request.setAttribute(Utilities.SUCCESS_MESSAGE, Utilities.SUCCESSFULLY_REGISTERED_MESSAGE);

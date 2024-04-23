@@ -13,6 +13,7 @@ import org.mindrot.bcrypt.BCrypt;
 import models.AdminModel;
 import models.BrandModel;
 import models.ContactUsMessageModel;
+import models.ProductModel;
 import models.UserModel;
 import utilities.Utilities;
 
@@ -118,7 +119,7 @@ public class DatabaseController {
 	    }
 	}
 	
-	public List<BrandModel> getBrands() {
+	public List<BrandModel> getBrandsFromDatabase() {
 	    List<BrandModel> brands = new ArrayList<>();
 	    try (Connection con = getConnection()) {
 	        PreparedStatement statements = con.prepareStatement(Utilities.Show_Brands);
@@ -128,7 +129,7 @@ public class DatabaseController {
 	            BrandModel brand = new BrandModel(companyName);
 	            brands.add(brand);
 	        }
-	        // Print each brand's name
+	        // Print each brand's name and id
 	        for (BrandModel brand : brands) {
 	            System.out.println("Brand Name: " + brand.getCompanyName());
 	        }
@@ -139,5 +140,22 @@ public class DatabaseController {
 	}
 
 
+	public int addProducts(ProductModel productModel) {
+		 try (Connection conn = getConnection()) {
+			 PreparedStatement statement = conn.prepareStatement(Utilities.Add_Products);
+			 statement.setString(1, productModel.getProductName());
+			 statement.setString(2, productModel.getProductDescription());
+			 statement.setDouble(3, productModel.getPrice());
+			 statement.setInt(4, productModel.getQuantity());
+			 statement.setString(5, productModel.getCompanyName());
+			 statement.setString(6, productModel.getProductImage());
+			 int result = statement.executeUpdate();
+				return result > 0 ? 1 : 0;
+		 }
+		 catch (SQLException | ClassNotFoundException ex) {
+		        ex.printStackTrace(); // Log the exception for debugging
+		        return -1;
+		    }
+	}
 
 }

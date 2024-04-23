@@ -35,6 +35,7 @@ public class UserModel implements Serializable{//implements Serializable to crea
 		}
 		return profilePicUrlFromPath;
 	}
+
 	public UserModel(String fullName, String email, String userName, String password,
 			String phoneNumber, Part imagePart) {
 		super();

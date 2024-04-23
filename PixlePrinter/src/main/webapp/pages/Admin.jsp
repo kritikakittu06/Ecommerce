@@ -53,12 +53,12 @@
                   <h3>Messagers</h3>
                   <span class="message-count">27</span> <!--yo chain ni messafe counter ho haii-->
                </a>
-               <a href="#">
+               <a href="${pageContext.request.contextPath}/AddProductServlet">
                   <span class="material-icons-sharp">
                   inventory </span>
                   <h3>Products</h3>
                </a>
-               <a href="${pageContext.request.contextPath}/pages/AddProducts.jsp">
+               <a href="${pageContext.request.contextPath}/AddProductServlet">
                   <span class="material-icons-sharp"> add </span>
                   <h3>Add Product</h3>
                </a>
@@ -66,7 +66,7 @@
                   <span class="material-icons-sharp"> add </span>
                   <h3>Add Admin</h3>
                   </a>
-                <a href="${pageContext.request.contextPath}/pages/AddBrand.jsp">
+                <a href="${pageContext.request.contextPath}/AddBrand">
                   <span class="material-icons-sharp"> add </span>
                   <h3>Add Brand</h3>
                   </a>  
@@ -198,7 +198,7 @@
                      <div class="text-muted">Admin</div>
                   </div>
                   <div class="profile-photo">
-                     <img src="${pageContext.request.contextPath}/Images/default-pfp.png"alt="Admin" />
+                     <img src="${pageContext.request.contextPath}/Uploads/ProfilePicture/Wanem1.png"alt="Admin"/>
                   </div>
                </div>
             </div>
