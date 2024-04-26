@@ -1,0 +1,37 @@
+package models;
+
+import java.io.File;
+
+import javax.servlet.http.Part;
+
+import utilities.Utilities;
+
+public class ProductModel{
+	private String productName;
+	private String productDescription;
+	private double price;
+	private int quantity;
+	private String companyName;
+	private String productImage;
+	
+	private String getProductPicUrl(Part part) {//part is an imterface not a class
+		String imageSavePath = Utilities.Product_Picture_Store_Dir;
+		File imageSaveDir = new File(imageSavePath);
+		String profilePicUrlFromPath = null;
+		if(!imageSaveDir.exists()) {
+			imageSaveDir.mkdir();
+		}
+		String contentDisp = part.getHeader("content-disposition");
+		String []items = contentDisp.split(";");
+		for(String s : items) {
+			if(s.trim().startsWith("filename")) {
+				profilePicUrlFromPath = s.substring(s.indexOf("=") + 2, s.length() -1);
+			}
+		}	
+		if(profilePicUrlFromPath == null || profilePicUrlFromPath.isEmpty()) {
+			profilePicUrlFromPath = "default.png";
+		}
+		return profilePicUrlFromPath;
+	}
+	
+}
