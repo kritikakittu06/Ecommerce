@@ -2602,3 +2602,490 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp
 
 !ENTRY ch.qos.logback.classic 1 0 2024-04-23 08:07:51.332
 !MESSAGE Logback config file: /home/happy-kitty/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+!SESSION 2024-04-23 15:52:28.459 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=17.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-04-23 15:52:33.360
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-04-23 15:52:33.652
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-04-23 15:52:35.950
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-04-23 15:52:36.457
+!MESSAGE Logback config file: /home/happy-kitty/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.jdt.core 4 4 2024-04-23 16:01:13.880
+!MESSAGE Could not retrieve superclass
+!STACK 0
+org.eclipse.jdt.internal.compiler.problem.AbortCompilation: Pb(347) The type com.google.protobuf.GeneratedMessageV3 cannot be resolved. It is indirectly referenced from required type com.mysql.cj.x.protobuf.MysqlxExpect.Open
+	at org.eclipse.jdt.internal.compiler.problem.ProblemHandler.handle(ProblemHandler.java:161)
+	at org.eclipse.jdt.internal.compiler.problem.ProblemHandler.handle(ProblemHandler.java:228)
+	at org.eclipse.jdt.internal.compiler.problem.ProblemReporter.handle(ProblemReporter.java:2693)
+	at org.eclipse.jdt.internal.compiler.problem.ProblemReporter.isClassPathCorrect(ProblemReporter.java:5185)
+	at org.eclipse.jdt.internal.compiler.lookup.UnresolvedReferenceBinding.resolve(UnresolvedReferenceBinding.java:125)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.resolveType(BinaryTypeBinding.java:251)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.superclass(BinaryTypeBinding.java:2466)
+	at org.eclipse.jdt.core.dom.TypeBinding.getSuperclass(TypeBinding.java:858)
+	at org.eclipse.jdt.internal.ui.text.correction.UnresolvedElementsBaseSubProcessor.isInherited(UnresolvedElementsBaseSubProcessor.java:1015)
+	at org.eclipse.jdt.internal.ui.text.correction.UnresolvedElementsBaseSubProcessor.addSimilarTypeProposals(UnresolvedElementsBaseSubProcessor.java:983)
+	at org.eclipse.jdt.internal.ui.text.correction.UnresolvedElementsBaseSubProcessor.collectTypeProposals(UnresolvedElementsBaseSubProcessor.java:742)
+	at org.eclipse.jdt.internal.ui.text.correction.UnresolvedElementsSubProcessor.getTypeProposals(UnresolvedElementsSubProcessor.java:144)
+	at org.eclipse.jdt.internal.ui.text.correction.QuickFixProcessor.process(QuickFixProcessor.java:455)
+	at org.eclipse.jdt.internal.ui.text.correction.QuickFixProcessor.getCorrections(QuickFixProcessor.java:378)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionCollector.safeRun(JavaCorrectionProcessor.java:381)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.run(JavaCorrectionProcessor.java:341)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.process(JavaCorrectionProcessor.java:336)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectCorrections(JavaCorrectionProcessor.java:465)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getJavaAnnotationFixes(ProblemHover.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.computeCompletionProposals(ProblemHover.java:89)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.<init>(ProblemHover.java:74)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover.createAnnotationInfo(ProblemHover.java:178)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover.getHoverInfo2(AbstractAnnotationHover.java:755)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jdt.core 4 4 2024-04-23 16:01:13.902
+!MESSAGE Could not retrieve superclass
+!STACK 0
+org.eclipse.jdt.internal.compiler.problem.AbortCompilation: Pb(347) The type com.google.protobuf.GeneratedMessageV3 cannot be resolved. It is indirectly referenced from required type com.mysql.cj.x.protobuf.MysqlxCrud.Collection
+	at org.eclipse.jdt.internal.compiler.problem.ProblemHandler.handle(ProblemHandler.java:161)
+	at org.eclipse.jdt.internal.compiler.problem.ProblemHandler.handle(ProblemHandler.java:228)
+	at org.eclipse.jdt.internal.compiler.problem.ProblemReporter.handle(ProblemReporter.java:2693)
+	at org.eclipse.jdt.internal.compiler.problem.ProblemReporter.isClassPathCorrect(ProblemReporter.java:5185)
+	at org.eclipse.jdt.internal.compiler.lookup.UnresolvedReferenceBinding.resolve(UnresolvedReferenceBinding.java:125)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.resolveType(BinaryTypeBinding.java:251)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.superclass(BinaryTypeBinding.java:2466)
+	at org.eclipse.jdt.core.dom.TypeBinding.getSuperclass(TypeBinding.java:858)
+	at org.eclipse.jdt.internal.ui.text.correction.UnresolvedElementsBaseSubProcessor.isInherited(UnresolvedElementsBaseSubProcessor.java:1015)
+	at org.eclipse.jdt.internal.ui.text.correction.UnresolvedElementsBaseSubProcessor.addSimilarTypeProposals(UnresolvedElementsBaseSubProcessor.java:983)
+	at org.eclipse.jdt.internal.ui.text.correction.UnresolvedElementsBaseSubProcessor.collectTypeProposals(UnresolvedElementsBaseSubProcessor.java:742)
+	at org.eclipse.jdt.internal.ui.text.correction.UnresolvedElementsSubProcessor.getTypeProposals(UnresolvedElementsSubProcessor.java:144)
+	at org.eclipse.jdt.internal.ui.text.correction.QuickFixProcessor.process(QuickFixProcessor.java:455)
+	at org.eclipse.jdt.internal.ui.text.correction.QuickFixProcessor.getCorrections(QuickFixProcessor.java:378)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionCollector.safeRun(JavaCorrectionProcessor.java:381)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.run(JavaCorrectionProcessor.java:341)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.process(JavaCorrectionProcessor.java:336)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectCorrections(JavaCorrectionProcessor.java:465)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getJavaAnnotationFixes(ProblemHover.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.computeCompletionProposals(ProblemHover.java:89)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.<init>(ProblemHover.java:74)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover.createAnnotationInfo(ProblemHover.java:178)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover.getHoverInfo2(AbstractAnnotationHover.java:755)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jdt.core 4 4 2024-04-23 16:01:13.935
+!MESSAGE Could not retrieve interfaces
+!STACK 0
+org.eclipse.jdt.internal.compiler.problem.AbortCompilation: Pb(347) The type com.google.protobuf.ProtocolMessageEnum cannot be resolved. It is indirectly referenced from required type com.mysql.cj.x.protobuf.MysqlxCrud.Order.Direction
+	at org.eclipse.jdt.internal.compiler.problem.ProblemHandler.handle(ProblemHandler.java:161)
+	at org.eclipse.jdt.internal.compiler.problem.ProblemHandler.handle(ProblemHandler.java:228)
+	at org.eclipse.jdt.internal.compiler.problem.ProblemReporter.handle(ProblemReporter.java:2693)
+	at org.eclipse.jdt.internal.compiler.problem.ProblemReporter.isClassPathCorrect(ProblemReporter.java:5185)
+	at org.eclipse.jdt.internal.compiler.lookup.UnresolvedReferenceBinding.resolve(UnresolvedReferenceBinding.java:125)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.resolveType(BinaryTypeBinding.java:251)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.superInterfaces(BinaryTypeBinding.java:2549)
+	at org.eclipse.jdt.core.dom.TypeBinding.getInterfaces(TypeBinding.java:513)
+	at org.eclipse.jdt.internal.ui.text.correction.UnresolvedElementsBaseSubProcessor.isInherited(UnresolvedElementsBaseSubProcessor.java:1010)
+	at org.eclipse.jdt.internal.ui.text.correction.UnresolvedElementsBaseSubProcessor.addSimilarTypeProposals(UnresolvedElementsBaseSubProcessor.java:983)
+	at org.eclipse.jdt.internal.ui.text.correction.UnresolvedElementsBaseSubProcessor.collectTypeProposals(UnresolvedElementsBaseSubProcessor.java:742)
+	at org.eclipse.jdt.internal.ui.text.correction.UnresolvedElementsSubProcessor.getTypeProposals(UnresolvedElementsSubProcessor.java:144)
+	at org.eclipse.jdt.internal.ui.text.correction.QuickFixProcessor.process(QuickFixProcessor.java:455)
+	at org.eclipse.jdt.internal.ui.text.correction.QuickFixProcessor.getCorrections(QuickFixProcessor.java:378)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionCollector.safeRun(JavaCorrectionProcessor.java:381)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.run(JavaCorrectionProcessor.java:341)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.process(JavaCorrectionProcessor.java:336)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectCorrections(JavaCorrectionProcessor.java:465)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getJavaAnnotationFixes(ProblemHover.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.computeCompletionProposals(ProblemHover.java:89)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.<init>(ProblemHover.java:74)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover.createAnnotationInfo(ProblemHover.java:178)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover.getHoverInfo2(AbstractAnnotationHover.java:755)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+!SESSION 2024-04-23 16:44:38.841 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=17.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-04-23 16:44:40.549
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-04-23 16:44:40.799
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-04-23 16:44:42.717
+!MESSAGE Logback config file: /home/happy-kitty/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+!SESSION 2024-04-24 20:34:12.852 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=17.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-04-24 20:34:19.187
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-04-24 20:34:19.416
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-04-24 20:34:21.255
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-04-24 20:34:21.824
+!MESSAGE Logback config file: /home/happy-kitty/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-04-24 20:35:40.710
+!MESSAGE [Info]	ESLint server running in node v18.18.2
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-04-24 20:35:40.742
+!MESSAGE [Info]	Using Typescript version (user-setting) 5.2.2 from path "/usr/lib/eclipse/plugins/org.eclipse.wildwebdeveloper_1.1.4.202311211923/node_modules/typescript/lib/tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-04-24 20:35:40.765
+!MESSAGE [Info]	Typescript Server version info: {version=5.2.2, source=user-setting}
+!SESSION 2024-04-25 08:19:53.571 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=17.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-04-25 08:19:57.636
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-04-25 08:19:57.880
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-04-25 08:20:00.791
+!MESSAGE Logback config file: /home/happy-kitty/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.wst.sse.ui 4 4 2024-04-25 09:07:28.305
+!MESSAGE StructuredTextViewer.exception.verifyText
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.wst.xml.core.internal.provisional.document.IDOMNode.getParentNode()" because the return value of "org.eclipse.wst.sse.core.internal.provisional.IStructuredModel.getIndexedRegion(int)" is null
+	at org.eclipse.jst.jsp.ui.internal.autoedit.StructuredAutoEditStrategyJSP.smartInsertForEndTag(StructuredAutoEditStrategyJSP.java:102)
+	at org.eclipse.jst.jsp.ui.internal.autoedit.StructuredAutoEditStrategyJSP.customizeDocumentCommand(StructuredAutoEditStrategyJSP.java:45)
+	at org.eclipse.jface.text.TextViewer.customizeDocumentCommand(TextViewer.java:3710)
+	at org.eclipse.jface.text.TextViewer.handleVerifyEvent(TextViewer.java:3745)
+	at org.eclipse.jface.text.source.projection.ProjectionViewer.handleVerifyEvent(ProjectionViewer.java:1250)
+	at org.eclipse.wst.sse.ui.internal.StructuredTextViewer.handleVerifyEvent(StructuredTextViewer.java:771)
+	at org.eclipse.jface.text.TextViewer$TextVerifyListener.verifyText(TextViewer.java:426)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:277)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5855)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1529)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1555)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1538)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1316)
+	at org.eclipse.swt.custom.StyledText.modifyContent(StyledText.java:7095)
+	at org.eclipse.swt.custom.StyledText.sendKeyEvent(StyledText.java:8027)
+	at org.eclipse.swt.custom.StyledText.doContent(StyledText.java:2035)
+	at org.eclipse.swt.custom.StyledText.handleKey(StyledText.java:5716)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:5747)
+	at org.eclipse.swt.custom.StyledText.lambda$28(StyledText.java:5426)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5855)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1529)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1555)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1538)
+	at org.eclipse.swt.widgets.Widget.sendIMKeyEvent(Widget.java:1639)
+	at org.eclipse.swt.widgets.Control.gtk_commit(Control.java:3643)
+	at org.eclipse.swt.widgets.Canvas.gtk_commit(Canvas.java:168)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:2493)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:6883)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6162)
+	at org.eclipse.swt.internal.gtk3.GTK3.gtk_im_context_filter_keypress(Native Method)
+	at org.eclipse.swt.widgets.Control.filterKey(Control.java:2842)
+	at org.eclipse.swt.widgets.Control.gtk_key_press_event(Control.java:4042)
+	at org.eclipse.swt.widgets.Composite.gtk_key_press_event(Composite.java:931)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:2507)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:6883)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6162)
+	at org.eclipse.swt.internal.gtk3.GTK3.gtk_main_do_event(Native Method)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1598)
+	at org.eclipse.swt.internal.gtk3.GTK3.gtk_main_iteration_do(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4514)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
+!SESSION 2024-04-25 11:56:47.079 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=17.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-04-25 11:56:48.761
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-04-25 11:56:48.898
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-04-25 11:56:50.365
+!MESSAGE Logback config file: /home/happy-kitty/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+!SESSION 2024-04-25 12:42:25.758 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=17.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product -data file:/home/happy-kitty/eclipse-workspace/
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-04-25 12:42:27.366
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-04-25 12:42:27.548
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-04-25 12:42:29.452
+!MESSAGE Logback config file: /home/happy-kitty/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.jdt.core 4 4 2024-04-25 12:55:21.530
+!MESSAGE Could not retrieve superclass
+!STACK 0
+org.eclipse.jdt.internal.compiler.problem.AbortCompilation: Pb(347) The type com.google.protobuf.GeneratedMessageV3 cannot be resolved. It is indirectly referenced from required type com.mysql.cj.x.protobuf.MysqlxExpect.Open
+	at org.eclipse.jdt.internal.compiler.problem.ProblemHandler.handle(ProblemHandler.java:161)
+	at org.eclipse.jdt.internal.compiler.problem.ProblemHandler.handle(ProblemHandler.java:228)
+	at org.eclipse.jdt.internal.compiler.problem.ProblemReporter.handle(ProblemReporter.java:2693)
+	at org.eclipse.jdt.internal.compiler.problem.ProblemReporter.isClassPathCorrect(ProblemReporter.java:5185)
+	at org.eclipse.jdt.internal.compiler.lookup.UnresolvedReferenceBinding.resolve(UnresolvedReferenceBinding.java:125)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.resolveType(BinaryTypeBinding.java:251)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.superclass(BinaryTypeBinding.java:2466)
+	at org.eclipse.jdt.core.dom.TypeBinding.getSuperclass(TypeBinding.java:858)
+	at org.eclipse.jdt.internal.ui.text.correction.UnresolvedElementsBaseSubProcessor.isInherited(UnresolvedElementsBaseSubProcessor.java:1015)
+	at org.eclipse.jdt.internal.ui.text.correction.UnresolvedElementsBaseSubProcessor.addSimilarTypeProposals(UnresolvedElementsBaseSubProcessor.java:983)
+	at org.eclipse.jdt.internal.ui.text.correction.UnresolvedElementsBaseSubProcessor.collectTypeProposals(UnresolvedElementsBaseSubProcessor.java:742)
+	at org.eclipse.jdt.internal.ui.text.correction.UnresolvedElementsSubProcessor.getTypeProposals(UnresolvedElementsSubProcessor.java:144)
+	at org.eclipse.jdt.internal.ui.text.correction.QuickFixProcessor.process(QuickFixProcessor.java:455)
+	at org.eclipse.jdt.internal.ui.text.correction.QuickFixProcessor.getCorrections(QuickFixProcessor.java:378)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionCollector.safeRun(JavaCorrectionProcessor.java:381)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.run(JavaCorrectionProcessor.java:341)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.process(JavaCorrectionProcessor.java:336)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectCorrections(JavaCorrectionProcessor.java:465)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getJavaAnnotationFixes(ProblemHover.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.computeCompletionProposals(ProblemHover.java:89)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.<init>(ProblemHover.java:74)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover.createAnnotationInfo(ProblemHover.java:178)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover.getHoverInfo2(AbstractAnnotationHover.java:755)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-04-25 13:50:21.375
+!MESSAGE [Info]	ESLint server running in node v18.18.2
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-04-25 13:50:21.432
+!MESSAGE [Info]	Using Typescript version (user-setting) 5.2.2 from path "/usr/lib/eclipse/plugins/org.eclipse.wildwebdeveloper_1.1.4.202311211923/node_modules/typescript/lib/tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-04-25 13:50:21.457
+!MESSAGE [Info]	Typescript Server version info: {version=5.2.2, source=user-setting}
+
+!ENTRY org.eclipse.jface 2 0 2024-04-25 13:51:57.872
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-04-25 13:51:57.872
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-04-25 14:04:43.841
+!MESSAGE [Info]	ESLint server running in node v18.18.2
+!SESSION 2024-04-26 09:07:20.940 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=17.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-04-26 09:07:24.469
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-04-26 09:07:24.667
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-04-26 09:07:26.623
+!MESSAGE Logback config file: /home/happy-kitty/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+!SESSION 2024-04-26 09:29:40.225 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=17.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-04-26 09:29:43.518
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-04-26 09:29:43.669
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-04-26 09:29:44.982
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-04-26 09:29:45.286
+!MESSAGE Logback config file: /home/happy-kitty/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.ui 4 0 2024-04-26 09:48:11.414
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4922)
+	at org.eclipse.swt.SWT.error(SWT.java:4837)
+	at org.eclipse.swt.SWT.error(SWT.java:4808)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:565)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:480)
+	at org.eclipse.swt.widgets.Control.redraw(Control.java:4685)
+	at org.eclipse.swt.widgets.Link.gtk_event_after(Link.java:459)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:2497)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:6883)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6162)
+	at org.eclipse.swt.internal.gtk3.GTK3.gtk_main_do_event(Native Method)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1598)
+	at org.eclipse.swt.internal.gtk3.GTK3.gtk_main_iteration_do(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4514)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
+!SESSION 2024-04-26 11:20:00.425 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=17.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-04-26 11:20:06.994
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-04-26 11:20:07.257
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-04-26 11:20:09.485
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-04-26 11:20:10.115
+!MESSAGE Logback config file: /home/happy-kitty/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+!SESSION 2024-04-26 14:49:34.245 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=17.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product -data file:/home/happy-kitty/eclipse-workspace/
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-04-26 14:49:35.850
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-04-26 14:49:36.081
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-04-26 14:49:38.039
+!MESSAGE Logback config file: /home/happy-kitty/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-04-26 15:12:29.540
+!MESSAGE [Info]	ESLint server running in node v18.18.2
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-04-26 15:12:29.560
+!MESSAGE [Info]	Using Typescript version (user-setting) 5.2.2 from path "/usr/lib/eclipse/plugins/org.eclipse.wildwebdeveloper_1.1.4.202311211923/node_modules/typescript/lib/tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-04-26 15:12:29.577
+!MESSAGE [Info]	Typescript Server version info: {version=5.2.2, source=user-setting}
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-04-26 15:15:30.540
+!MESSAGE [Info]	ESLint server running in node v18.18.2
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-04-26 15:39:07.542
+!MESSAGE [Info]	ESLint server running in node v18.18.2
+!SESSION 2024-04-27 09:09:09.616 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=17.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-04-27 09:09:13.373
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-04-27 09:09:13.547
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-04-27 09:09:15.366
+!MESSAGE Logback config file: /home/happy-kitty/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml

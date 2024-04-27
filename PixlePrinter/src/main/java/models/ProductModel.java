@@ -13,7 +13,39 @@ public class ProductModel{
 	private int quantity;
 	private String companyName;
 	private String productImage;
+	private String printTechnology;
+	private String printSpeed;
+	private String printResulotion;
+	private String weight;
+	private String dimensions;
+	private String operatingSystem;
+	private String supportedPageSize;
+	private String color;
+	private String printColor;
 	
+	
+
+	public ProductModel(String productName, String productDescription, double price, int quantity, String companyName,
+			String productImage, String printTechnology, String printSpeed, String printResulotion, String weight,
+			String dimensions, String operatingSystem, String supportedPageSize, String color, String printColor) {
+		super();
+		this.productName = productName;
+		this.productDescription = productDescription;
+		this.price = price;
+		this.quantity = quantity;
+		this.companyName = companyName;
+		this.productImage = productImage;
+		this.printTechnology = printTechnology;
+		this.printSpeed = printSpeed;
+		this.printResulotion = printResulotion;
+		this.weight = weight;
+		this.dimensions = dimensions;
+		this.operatingSystem = operatingSystem;
+		this.supportedPageSize = supportedPageSize;
+		this.color = color;
+		this.printColor = printColor;
+	}
+
 	private String getProductPicUrl(Part part) {//part is an imterface not a class
 		String imageSavePath = Utilities.Product_Picture_Store_Dir;
 		File imageSaveDir = new File(imageSavePath);
@@ -34,8 +66,9 @@ public class ProductModel{
 		return profilePicUrlFromPath;
 	}
 	
-	public ProductModel(String productName, String productDescription, double price, int quantity, String companyName,
-			Part imagePart) {
+	public ProductModel(String productName, String productDescription, double price, int quantity, String companyName, Part imagePart,
+			String printTechnology, String printSpeed, String printResulotion, String weight,
+			String dimensions, String operatingSystem, String supportedPageSize, String color, String printColor) {
 		super();
 		this.productName = productName;
 		this.productDescription = productDescription;
@@ -43,6 +76,15 @@ public class ProductModel{
 		this.quantity = quantity;
 		this.companyName = companyName;
 		this.productImage = getProductPicUrl(imagePart);
+		this.printTechnology = printTechnology;
+		this.printSpeed = printSpeed;
+		this.printResulotion = printResulotion;
+		this.weight = weight;
+		this.dimensions = dimensions;
+		this.operatingSystem = operatingSystem;
+		this.supportedPageSize = supportedPageSize;
+		this.color = color;
+		this.printColor = printColor;
 	}
 
 	public String getProductName() {
@@ -90,8 +132,83 @@ public class ProductModel{
 	}
 
 	public void setProductImage(Part part) {
-		this.productImage = getProductPicUrl(part);
+	    this.productImage = getProductPicUrl(part);
 	}
-	
+
+	public String getPrintTechnology() {
+		return printTechnology;
+	}
+
+	public void setPrintTechnology(String printTechnology) {
+		this.printTechnology = printTechnology;
+	}
+
+	public String getPrintSpeed() {
+		return printSpeed;
+	}
+
+	public void setPrintSpeed(String printSpeed) {
+		this.printSpeed = printSpeed;
+	}
+
+	public String getPrintResolution() {
+		return printResulotion;
+	}
+
+	public void setPrintResulotion(String printResulotion) {
+		this.printResulotion = printResulotion;
+	}
+
+	public String getWeight() {
+		return weight;
+	}
+
+	public void setWeight(String weight) {
+		this.weight = weight;
+	}
+
+	public String getDimensions() {
+		return dimensions;
+	}
+
+	public void setDimensions(String dimensions) {
+		this.dimensions = dimensions;
+	}
+
+	public String getOperatingSystem() {
+		return operatingSystem;
+	}
+
+	public void setOperatingSystem(String operatingSystem) {
+		this.operatingSystem = operatingSystem;
+	}
+
+	public String getSupportedPageSize() {
+		return supportedPageSize;
+	}
+
+	public void setSupportedPageSize(String supportedPageSize) {
+		this.supportedPageSize = supportedPageSize;
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	public String getPrintColor() {
+		return printColor;
+	}
+
+	public void setPrintColor(String printColor) {
+		this.printColor = printColor;
+	}
+
+//	public void setProductImage(String productImage) {
+//		this.productImage = productImage;
+//	}
 	
 }

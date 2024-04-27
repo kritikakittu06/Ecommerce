@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ page import="java.util.List"%>
-<%@ page import="models.BrandModel" %>
+<%@ page import="models.BrandModel"%>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -77,13 +77,19 @@ body {
 </head>
 <body>
 	<div class="container">
-	<div class="form-messages">
-    <% if (request.getAttribute("successMessage") != null) { %>
-        <div class="success-message"><%= request.getAttribute("successMessage") %></div>
-    <% } else if (request.getAttribute("errorMessage") != null) { %>
-        <div class="error-message"><%= request.getAttribute("errorMessage") %></div>
-    <% } %>
-	</div>
+		<div class="form-messages">
+			<%
+			if (request.getAttribute("successMessage") != null) {
+			%>
+			<div class="success-message"><%=request.getAttribute("successMessage")%></div>
+			<%
+			} else if (request.getAttribute("errorMessage") != null) {
+			%>
+			<div class="error-message"><%=request.getAttribute("errorMessage")%></div>
+			<%
+			}
+			%>
+		</div>
 		<h2>Add Product</h2>
 		<form action="${pageContext.request.contextPath}/AddProductServlet"
 			method="POST" enctype="multipart/form-data">
@@ -108,18 +114,78 @@ body {
 				<label for="productImage">Product Image</label> <input type="file"
 					id="productImage" name="productImage" accept="image/*" required>
 			</div>
-	<div class="form-group">
-    	<label for="brandName">Brand</label>
-    	<select id="brandName" name="brandName" required>
-        	<option value="" selected disabled>Select Brand</option>
-	        <% if (request.getAttribute("brands") != null) {
-    	        List<BrandModel> brands = (List<BrandModel>) request.getAttribute("brands");
-        	    for (BrandModel brand : brands) { %>
-            	    <option value="<%= brand.getCompanyName() %>"><%= brand.getCompanyName() %></option>
-	        <%  }
-    	    } %>
-    	</select>
-	</div>
+
+			<div class="form-group">
+				<label for="brandName">Brand</label> <select id="brandName"
+					name="brandName" required>
+					<option value="" selected disabled>Select Brand</option>
+					<%
+					if (request.getAttribute("brands") != null) {
+						List<BrandModel> brands = (List<BrandModel>) request.getAttribute("brands");
+						for (BrandModel brand : brands) {
+					%>
+					<option value="<%=brand.getCompanyName()%>"><%=brand.getCompanyName()%></option>
+					<%
+					}
+					}
+					%>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="printTechnology">Print Technology</label> <select
+					id="printTechnology" name="printTechnology" required>
+					<option value="" selected disabled>Select Print Technology</option>
+					<option value="Inkjet">Inkjet</option>
+					<option value="Laser">Laser</option>
+					<option value="LED">LED</option>
+					<option value="Dot Matrix">Dot Matrix</option>
+					<option value="Dye Sublimation">Dye Sublimation</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="printColor">Print Color</label> <select id="printColor"
+					name="printColor" required>
+					<option value="" selected disabled>Select Print Color</option>
+					<option value="Black and white">Black and White</option>
+					<option value="Color">Color</option>
+					<option value="Supports Both">Supports Both</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="printSpeed">Print Speed (e.g., "500ppm")</label> <input
+					type="text" id="printSpeed" name="printSpeed" required>
+			</div>
+			<div class="form-group">
+				<label for="printResolution">Print Resolution</label> <input
+					type="text" id="printResolution" name="printResolution" required>
+			</div>
+
+			<div class="form-group">
+				<label for="printerWeight">Printer Weight</label> <input type="text" id="weight"
+					name="printerWeight" required>
+			</div>
+
+			<div class="form-group">
+				<label for="printerDimensions">Printer Dimensions</label> <input type="text"
+					id="printerDimensions" name="printerDimensions" required>
+			</div>
+
+			<div class="form-group">
+				<label for="operatingSystem">Operating Systems</label> <input
+					type="text" id="operatingSystem" name="operatingSystem" required>
+			</div>
+
+			<div class="form-group">
+				<label for="printerColor">Printer Color</label> <input type="text" id="printerColor"
+					name="printerColor" required>
+			</div>
+
+			<div class="form-group">
+				<label for="supportedPageSize">Supported Page Size</label> <input
+					type="text" id="supportedPageSize" name="supportedPageSize"
+					required>
+			</div>
+
 			<button type="submit">Add Product</button>
 		</form>
 	</div>

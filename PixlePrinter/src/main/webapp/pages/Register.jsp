@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/css/Register.css">
     <title>Register</title>
 </head>
-<body background="${pageContext.request.contextPath}/https://w.wallhaven.cc/full/47/wallhaven-47585y.jpg">
+<body background="${pageContext.request.contextPath}/Images/RegBg.png">
     <div class="container">
         <div class="card">
             <form method="post" action="${pageContext.request.contextPath}/UserRegister" enctype="multipart/form-data">
