@@ -42,8 +42,7 @@ public class AddProductServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		DatabaseController dbController = new DatabaseController();
-		List<BrandModel> brands = dbController.getBrandsFromDatabase(); // Replace this with your method to fetch brands
-																		// from the database
+		List<BrandModel> brands = dbController.getBrandsFromDatabase(); 																	// from the database
 
 		for (BrandModel bs : brands) {
 			System.out.println(bs.getCompanyName());
@@ -65,9 +64,18 @@ public class AddProductServlet extends HttpServlet {
 		int quantity = Integer.parseInt(request.getParameter(Utilities.product_quantity));
 		String companyName = request.getParameter("brandName");
 		Part productImage = request.getPart(Utilities.product_image);
-		System.out.println("Brand Nice "+ companyName);
-		ProductModel productModel = new ProductModel(productName, productDesc, price, quantity, companyName,
-				productImage);
+		String printTechnology = request.getParameter(Utilities.print_technology);
+		String printSpeed = request.getParameter(Utilities.print_speed);
+		String printResulotion = request.getParameter(Utilities.print_resolution);
+		String weight = request.getParameter(Utilities.printer_weight);
+		String dimensions = request.getParameter(Utilities.printer_dimensions);
+		String operatingSystem = request.getParameter(Utilities.operating_system);
+		String supportedPageSize = request.getParameter(Utilities.supported_page_size);
+		String color = request.getParameter(Utilities.printer_color);
+		String printColor = request.getParameter(Utilities.print_color);
+//		System.out.println("Brand Nice "+ companyName);
+		ProductModel productModel = new ProductModel(productName, productDesc, price, quantity, companyName, productImage,
+				printTechnology, printSpeed, printResulotion, weight, dimensions, operatingSystem, supportedPageSize, color, printColor);
 
 		String savePath = Utilities.Product_Picture_Store_Dir;
 		String fileName = productModel.getProductImage();

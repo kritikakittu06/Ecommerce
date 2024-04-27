@@ -1,0 +1,154 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printer Design </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <link rel="stylesheet" href="${pageContext.request.contextPath}/css/product.css" />
+
+</head>
+<body>
+    <section class="category">
+      <div class="box-container">
+  
+          <a href="#" class="box">
+              <h3>Canon</h3>
+          </a>
+  
+          <a href="#" class="box">
+              <h3>Epson</h3>
+          </a>
+  
+          <a href="#" class="box">
+              <h3>Xerox</h3>
+          </a>
+  
+          <a href="#" class="box">
+              <h3>HP</h3>
+          </a>
+  
+          <a href="#" class="box">
+              <h3>Brother</h3>
+          </a>
+  
+      </div>
+    </section>
+
+<section class="featured" id="features">
+    <div class="content">
+            <h1>Featured Products</h1>
+            <p>Featured Products</p>
+    </div>
+</section>
+
+
+
+
+
+<section class="shop" id="shop">
+    <div class="box-container">
+
+        <div class="box">
+            <div class="img">
+                <img decoding="async" src="https://i.pinimg.com/564x/a4/ec/c1/a4ecc14c59f1c58b1382b312da584fa9.jpg">
+                <div class="icons">
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Brother</h3>
+                <div class="price">$40-<span>$200.99</span></div>
+                <a href="signup.html" class="btn">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="img">
+                <img decoding="async" src="https://i.pinimg.com/564x/87/fb/12/87fb12a6c1eb15bee0f50e6153da2db3.jpg">
+                <div class="icons">
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Canon </h3>
+                <div class="price">$40-<span>$200.99</span></div>
+                <a href="signup.html" class="btn">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="img">
+                <img decoding="async" src="https://i.pinimg.com/564x/e6/b0/2d/e6b02d9976153f2cf70a8d6b39049f2f.jpg">
+                <div class="icons">
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Epson</h3>
+                <div class="price">$40-<span>$200.99</span></div>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="img">
+                <img decoding="async" src="https://i.pinimg.com/564x/a9/52/c2/a952c25feedf68d0441ba9df3f17a34c.jpg">
+                <div class="icons">
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>HP Printer</h3>
+                <div class="price">$40-<span>$200.99</span></div>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="img">
+                <img decoding="async" src="https://i.pinimg.com/736x/5a/fe/e3/5afee3da40020dfd1f26b8b3a686f63d.jpg">
+                <div class="icons">
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Xerox</h3>
+                <div class="price">$40-<span>$200.99</span></div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="img">
+                <img src="${pageContext.request.contextPath}/Images/product/Hp.webp" width="160px" />
+                <div class="icons">
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Epson</h3>
+                <div class="price">$40-<span>$200.99</span></div>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+</body>
+</html>

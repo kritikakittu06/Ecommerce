@@ -42,7 +42,7 @@ public class LoginServlet extends HttpServlet {
         } 
         else if (loginResult == 5) {
             request.getSession().setAttribute("username", username);
-            response.sendRedirect(request.getContextPath() + Utilities.ADMIN_HOME_PAGE);
+            response.sendRedirect(request.getContextPath() + Utilities.ADMIN_HOME_SERVLET);
         } 
         else if (loginResult == 0) {
             request.setAttribute(Utilities.ERROR_MESSAGE, Utilities.INCORRECT_LOGIN_CREDENTIAL_ERROR);
