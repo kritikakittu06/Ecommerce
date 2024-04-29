@@ -26,7 +26,6 @@
                 <h5>Already have an account?</h5>
                 <a href="${pageContext.request.contextPath}/pages/Login.jsp">Login</a>
             </div>
-                    <%-- Display messages --%>
     <% if (request.getAttribute(Utilities.SUCCESS_MESSAGE) != null) { %>
         <p class="successMessage"><%= request.getAttribute(Utilities.SUCCESS_MESSAGE) %></p>
     <% } else if (request.getAttribute(Utilities.ERROR_MESSAGE) != null) { %>

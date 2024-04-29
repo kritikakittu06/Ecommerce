@@ -25,7 +25,7 @@
         <nav class="navbar">
             <a class="active"
                 href="${pageContext.request.contextPath}/pages/Index.jsp">Home</a> <a
-                href="${pageContext.request.contextPath}/pages/product.jsp">Product</a>
+                href="${pageContext.request.contextPath}/DisplayProductToCustomerServlet">Product</a>
             <a href="${pageContext.request.contextPath}/pages/Contact.jsp">About
                 Us</a> 
             <% 
@@ -54,7 +54,7 @@
 					<p>Now make your office and academic work easier and convenient
 						by connecting with us!</p>
 					<br /> <a
-						href="${pageContext.request.contextPath}/pages/product.jsp"
+						href="${pageContext.request.contextPath}/DisplayProductToCustomerServlet"
 						class="btn">Explore Now &#8594;</a>
 				</div>
 				<div class="col2">
