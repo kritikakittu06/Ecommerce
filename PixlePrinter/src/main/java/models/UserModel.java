@@ -16,6 +16,15 @@ public class UserModel implements Serializable{//implements Serializable to crea
 	private String phoneNumber;
 	private String profilePicture;
 	
+	public UserModel(String fullName, String email, String userName, String phoneNumber, String profilePicture) {
+		super();
+		this.fullName = fullName;
+		this.email = email;
+		this.userName = userName;
+		this.phoneNumber = phoneNumber;
+		this.profilePicture = profilePicture;
+	}
+
 	private String getProfilePicUrl(Part part) {//part is an imterface not a class
 		String imageSavePath = Utilities.Profile_Picture_Store_Dir;
 		File imageSaveDir = new File(imageSavePath);

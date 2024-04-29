@@ -18,7 +18,7 @@ package utilities;
 		public static final String Store_Contact_Us_Page_Message = "INSERT INTO ContactUsFormMessage (Name, ContactNumber, Email, Message)"
 				+ "VALUES (?, ?, ?, ?)";
 		//query to read the stored message from the database
-		public static final String Read_Contact_Us_Message = "SELECT * FROM ContactUsFormMessage";
+		public static final String READ_CONTACT_US_MESSAGE = "SELECT * FROM ContactUsFormMessage";
 		//query to add brand to the database
 		public static final String Add_Brands = "INSERT INTO Brand (CompanyName) VALUES(?) ";
 		//query to get all the brands from the database;
@@ -37,6 +37,22 @@ package utilities;
 		public static final String GET_PRODUCT_COUNT = "select count(*) from Product;";
 		//query to get the brand count
 		public static final String GET_BRAND_COUNT = "select count(*) from Brand";
+		//query to get the info of users
+		public static final String GET_CUSTOMER_DETATILS = "select * from User where accountType = 'User'";
+		//query to get the purchase history of a customer
+		public static final String GET_PURCHASE_HISTORY_OF_USER = "SELECT "
+		        + "p.purchaseId, "
+		        + "p.DateTime, "
+		        + "p.quantity, "
+		        + "p.totalAmount, "
+		        + "pr.productName, "
+		        + "pr.price, "
+		        + "pr.productImage "
+		        + "FROM Purchase p JOIN "
+		        + "Product pr ON p.productId = pr.productId "
+		        + "WHERE "
+		        + "p.userId = ?;";
+
 		
 		
 		//defining a set of constant values
@@ -95,6 +111,7 @@ package utilities;
 		// Start JSP Route
 		public static final String LOGIN_PAGE = "/pages/Login.jsp";
 		public static final String REGISTER_PAGE = "/pages/Register.jsp";
+		public static final String ADMIN_REGISTRATION_PAGE = "/pages/AddAdmin.jsp";
 		public static final String HOME_PAGE = "/pages/Index.jsp";
 		public static final String ADMIN_HOME_PAGE = "/pages/Admin.jsp";
 		public static final String CONTACT_US_PAGE = "/pages/Contact.jsp";

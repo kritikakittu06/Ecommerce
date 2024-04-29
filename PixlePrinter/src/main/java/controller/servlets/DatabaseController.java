@@ -2,6 +2,7 @@
 package controller.servlets;
 
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -273,5 +274,47 @@ public class DatabaseController {
 			e.printStackTrace();
 		}
 		return result;
+	}
+	
+	public List<UserModel> getCustomerDetails(){
+		List<UserModel> userDetails = new ArrayList<>();
+		try(Connection conn = getConnection()){
+			PreparedStatement statement = conn.prepareStatement(Utilities.GET_CUSTOMER_DETATILS);
+			ResultSet resultSet = statement.executeQuery();
+			while (resultSet.next()) {
+				String userName  = resultSet.getString("userName");
+				String fullName = resultSet.getString("fullName");
+				String email = resultSet.getString("email");
+				String phoneNumber = resultSet.getString("phoneNumber");
+				String profilePicture = resultSet.getString("profilePicture");
+				UserModel userModel = new UserModel(fullName, email, userName, phoneNumber, profilePicture);
+				userDetails.add(userModel);
+			}
+		} catch (ClassNotFoundException | SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return userDetails;
+	}
+	
+	public List<ContactUsMessageModel> getContactUsMessage(){
+		List<ContactUsMessageModel> contactUsMessages = new ArrayList<>();
+		try(Connection con = getConnection()){
+			PreparedStatement statement = con.prepareStatement(Utilities.READ_CONTACT_US_MESSAGE);
+			ResultSet messages = statement.executeQuery();
+			while (messages.next()){
+				String name = messages.getString("Name");
+				String contactNumber = messages.getString("ContactNumber");
+				String email = messages.getString("Email");
+				String message = messages.getString("Message");
+				Date datetime = messages.getDate("DateTime");
+				ContactUsMessageModel contactUsMessageModel = new ContactUsMessageModel(name, contactNumber, email, message, datetime);
+				contactUsMessages.add(contactUsMessageModel);
+			}
+		}
+		catch(ClassNotFoundException | SQLException ex) {
+			ex.printStackTrace();
+		}
+		return contactUsMessages;
 	}
 }

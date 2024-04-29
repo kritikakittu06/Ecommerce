@@ -49,7 +49,8 @@ public class AdminRegisterServlet extends HttpServlet {
 		
 		if (result == 1) {
 		    request.setAttribute(Utilities.SUCCESS_MESSAGE, Utilities.SUCCESSFULLY_REGISTERED_MESSAGE);
-		    response.sendRedirect(request.getContextPath() + Utilities.LOGIN_PAGE);
+//		    response.sendRedirect(request.getContextPath() + Utilities.ADMIN_REGISTRATION_PAGE);
+		    request.getRequestDispatcher(Utilities.ADMIN_REGISTRATION_PAGE).forward(request, response);
 		} 
 		else if (result == 0) {
 		    request.setAttribute(Utilities.ERROR_MESSAGE, Utilities.INCORRECT_FORM_DATA_MESSAGE);

@@ -1,3 +1,5 @@
 INDEX VERSION 1.134
+/home/happy-kitty/eclipse-workspace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/250750107.index
+/TimZyStore/src/main/java
 /home/happy-kitty/eclipse-workspace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1392400421.index
 /PixlePrinter/src/main/java

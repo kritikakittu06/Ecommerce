@@ -35,7 +35,6 @@ public class DisplayProductToAdminServlet extends HttpServlet {
 //		response.getWriter().append("Served at: ").append(request.getContextPath());
 		DatabaseController dbController = new DatabaseController();
 		List<ProductModel> products = dbController.getProductsFromDatabase();
-		
 		request.setAttribute("products", products);
 		request.getRequestDispatcher("/pages/AdminProducts.jsp").forward(request, response);
 	}
